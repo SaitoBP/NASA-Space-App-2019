@@ -1,0 +1,38 @@
+body {
+    background-image: url("../img/background.svg");
+    background-repeat: repeat;
+    background-size: 100%;
+    
+    font-family: 'Nunito', sans-serif;
+}
+
+header {
+    text-align: center;
+    color: #DBC6D9;
+}
+
+.main-carousel {
+    width: 90%;
+    left: 4.5%;
+    margin-top: 5%;
+}
+
+.carousel-cell {
+    width: 100%;
+    height: 500px;
+
+    text-align: center;
+
+    color: #DBC6D9;
+    background-color: rgba(91, 48, 106, 0.1);
+
+    border-radius: 30px;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
