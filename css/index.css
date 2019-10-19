@@ -45,19 +45,27 @@ header {
     margin-bottom: 3%;
 }
 
-button {
-    margin-top: 15%;
-    background-color: #49A747;
-    border: none;
+.nextBtn {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background-color: transparent;
+    border: 1px #49A747 solid;
     border-radius: 10px;
 
-    color: white;
-    font-size: 1.3em;
+    color: #49A747;
+    font-size: 1.2em;
     width: 180px;
+    height: 40px;
 }
 
-button:hover {
+.nextBtn:hover {
     cursor: pointer;
+
+    background-color: rgba(73, 167, 71, 0.3);
 }
 
 input {
@@ -74,4 +82,26 @@ input:focus {
 
 #regressiveCount {
     font-size: 4em;
+}
+
+.sizes {
+    display: flex;
+    justify-content: space-around;
+}
+
+.choiceSize {
+    background-color: transparent;
+    border: 2px solid #DBC6D9;
+    width: 180px;
+    height: 70px;
+    border-radius: 15px;
+
+    color: #DBC6D9;
+    font-size: 1.2em;
+}
+
+.choiceSize:hover {
+    cursor: pointer;
+
+    background-color: rgba(219, 198, 217, 0.3);
 }
