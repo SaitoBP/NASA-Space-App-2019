@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 262.1 262.1" style="enable-background:new 0 0 262.1 262.1;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#BBF0FC;stroke:#000000;stroke-width:6.1229;stroke-miterlimit:10;}
+	.st1{fill:#33658A;}
+	.st2{fill:none;stroke:#000000;stroke-width:6.1229;stroke-miterlimit:10;}
+	.st3{fill:#07B102;}
+	.st4{fill:none;stroke:#000000;stroke-width:3;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;}
+	.st6{fill:none;stroke:#000000;stroke-width:7.9168;stroke-miterlimit:10;}
+</style>
+<g id="Saturno">
+	<path class="st0" d="M47.1,460.1"/>
+</g>
+<g id="Terra">
+	<g id="XMLID_66_">
+		<g>
+			<circle class="st1" cx="131.1" cy="131.1" r="128"/>
+		</g>
+		<g>
+			<circle class="st2" cx="131.1" cy="131.1" r="128"/>
+		</g>
+	</g>
+	<g id="XMLID_65_">
+		<g>
+			<path class="st3" d="M253.6,93.6c0,0,9,52,5,55c-12.6,9.5-14-18-14-18s6-8,1-18S253.6,93.6,253.6,93.6z"/>
+			<path class="st3" d="M253.6,168.6c0,0-15,48-47,62c0,0-14-39,16-43s0-25,0-25S220.6,136.6,253.6,168.6z"/>
+			<path class="st3" d="M172.6,9.6c2,0,45,18,43,25s-35,7-50,25s-18,9-49,24s-15.5,69.5-15.5,69.5C56.5,132.6,54.6,89.6,54.6,28.6
+				c38-33,93-26,93-26C138.6,58.6,170.6,9.6,172.6,9.6z"/>
+			<path class="st3" d="M153.6,175.6c38,37,5,45,5,45s-1,16-28,12s-6,18-70,0c-2.7-0.8,34-12,30-43s20-24,20-24
+				S115.6,138.6,153.6,175.6z"/>
+		</g>
+		<g>
+			<path class="st4" d="M101.1,153.1c0,0-15.5-54.5,15.5-69.5s34-6,49-24s48-18,50-25s-41-25-43-25s-34,49-25-7c0,0-55-7-93,26
+				C54.6,89.6,56.5,132.6,101.1,153.1z"/>
+			<path class="st5" d="M258.6,148.6c-12.6,9.5-14-18-14-18s6-8,1-18s8-19,8-19S262.6,145.6,258.6,148.6z"/>
+			<path class="st4" d="M60.6,232.6c-2.7-0.8,34-12,30-43s20-24,20-24s5-27,43,10s5,45,5,45s-1,16-28,12S124.6,250.6,60.6,232.6z"/>
+			<path class="st4" d="M206.6,230.6c0,0-14-39,16-43s0-25,0-25s-2-26,31,6C253.6,168.6,238.6,216.6,206.6,230.6z"/>
+		</g>
+	</g>
+</g>
+<g id="Jupiter">
+</g>
+<g id="Anel_de_Uranus">
+	<path class="st6" d="M1356.1-44.4"/>
+</g>
+</svg>

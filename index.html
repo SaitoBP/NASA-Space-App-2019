@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TITULO DO PROJETO</title>
+    <title>MY LITTLE PLANET</title>
 
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="css/index.css">
 
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="img/logo.png" type="image/icon">
+
+
 </head>
 <body>
     <header>
-        <h1>TITULO DO PROJETO</h1>
+        <h1>MY LITTLE PLANET</h1>
     </header>
 
     <section>
@@ -21,6 +25,7 @@
             <div class="carousel-cell">
                 <div class="content">
                     <h1>Olá, pronto para começar uma jornada?</h1>
+                    <img src="img/information.svg" alt="" width="30px">
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Dicta labore quia suscipit ducimus quo mollitia, ipsam 
@@ -36,23 +41,19 @@
 
             <div class="carousel-cell">
                 <div class="content">
-                    <h1>Olá, pronto para começar uma jornada?</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Dicta labore quia suscipit ducimus quo mollitia, ipsam 
-                        saepe quaerat natus illum at quas necessitatibus fugit 
-                        iste tempora laborum enim quasi eligendi tempore. 
-                        Facere eligendi provident, doloremque libero ipsum et 
-                        soluta ea dicta. Nihil fugiat repellendus natus in? 
-                        Fuga natus omnis molestias!
-                    </p>
+                    <h1>Antes de partimos preciso saber de algumas coisas</h1>
+                    <h3>Como voce se chama?</h3>
+                    <input type="text" placeholder="Ex: Ana"><br>
+
+                    <h3>Quantos anos você tem?</h3>
+                    <input type="text" placeholder="Ex: 8"><br>
                     <button onclick="flkty.next()">Proximo</button>
                 </div>
             </div>
 
             <div class="carousel-cell">
                 <div class="content">
-                    <h1>Olá, pronto para começar uma jornada?</h1>
+                    <h1>Vamos resumir sua missão</h1>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Dicta labore quia suscipit ducimus quo mollitia, ipsam 
@@ -62,9 +63,25 @@
                         soluta ea dicta. Nihil fugiat repellendus natus in? 
                         Fuga natus omnis molestias!
                     </p>
-                    <button onclick="flkty.next()">Finalizar</button>
+                    <button onclick="flkty.next(); typeWriter()">Entendido</button>
                 </div>
             </div>
+
+            <div class="carousel-cell">
+                <div class="content">
+                    <div id="regressiveCount">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-cell">
+                <div class="content">
+                    <h1>Parabens, nós encontramos esse planeta</h1>
+                    <img src="img/terra.svg" alt="">
+                </div>
+            </div>
+
         </div>
     </section>
 

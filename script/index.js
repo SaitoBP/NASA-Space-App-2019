@@ -7,3 +7,14 @@ var flkty = new Flickity( elem, {
   draggable: true
 });
 
+var i = 0;
+var txt = "3.. 2... 1... Vamos!";
+var speed = 0.95;
+
+function typeWriter() {
+  if (i < txt.length) {
+      document.getElementById("regressiveCount").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typeWriter, 100);
+  }
+}

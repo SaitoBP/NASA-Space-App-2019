@@ -2,7 +2,7 @@ body {
     background-image: url("../img/background.svg");
     background-repeat: repeat;
     background-size: 100%;
-    
+
     font-family: 'Nunito', sans-serif;
 }
 
@@ -14,7 +14,7 @@ header {
 .main-carousel {
     width: 90%;
     left: 4.5%;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
 .carousel-cell {
@@ -35,4 +35,43 @@ header {
     left: 50%;
 
     transform: translate(-50%, -50%);
+}
+
+.content h1 {
+    margin-bottom: 5%;
+}
+
+.content img {
+    margin-bottom: 3%;
+}
+
+button {
+    margin-top: 15%;
+    background-color: #49A747;
+    border: none;
+    border-radius: 10px;
+
+    color: white;
+    font-size: 1.3em;
+    width: 180px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+input {
+    border: none;
+    border-bottom: 1px #DBC6D9 solid;
+    background-color: transparent;   
+
+    color: #DBC6D9;
+}
+
+input:focus {
+    outline: none;
+}
+
+#regressiveCount {
+    font-size: 4em;
 }
