@@ -141,11 +141,7 @@ input:focus {
     background-color: rgba(207, 43, 55, 0.3);
 }
 
-<<<<<<< HEAD
-input[type="range"] {
-=======
 input[type="range"]{
->>>>>>> 7ba53c5955a38a141eff7869591fe6edd8bb87db
     width: 60%;
     margin-top: 10%;
 }

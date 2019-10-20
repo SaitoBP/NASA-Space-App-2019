@@ -1,3 +1,4 @@
+// Carrosel (Não Mexer)
 var elem = document.querySelector('.main-carousel');
 var flkty = new Flickity( elem, {
   // options
