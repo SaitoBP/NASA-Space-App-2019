@@ -73,9 +73,9 @@
                     <h1>Nossos radares estão mostrando 3 planetas, para qual nós iremos?</h1>
                     <img src="img/information.svg" alt="" width="30px">
                     <div class="sizes">
-                        <button onclick= "tamanhoPequeno()" class="choiceSize" id="small">Pequeno</button>
-                        <button onclick= "tamanhoMedio()" class="choiceSize" id="medium">Médio</button>
-                        <button onclick= "tamanhoGrande()" class="choiceSize" id="large">Grande</button>
+                        <button onclick= "tamanhoPequeno()" class="choices" id="small">Pequeno</button>
+                        <button onclick= "tamanhoMedio()" class="choices" id="medium">Médio</button>
+                        <button onclick= "tamanhoGrande()" class="choices" id="large">Grande</button>
                     </div>
                 </div>
             </div>
@@ -96,7 +96,9 @@
                     <h1>Qual é a distancia deste planeta em relação a estrela mãe?</h1>
                     <img src="img/information.svg" alt="" width="30px">
                     <div class="form">
-                        <input type="range" name="" class="slider" id="distancia" min="1" max="3">
+                        <button class="choices">OPT 1</button>
+                        <button class="choices">OPT 2</button>
+                        <button class="choices">OPT 3</button>
                     </div>
                 </div>
                 <button class="nextBtn">Proximo</button>
@@ -105,10 +107,12 @@
             <div class="carousel-cell">
                 <div class="content">
                     <h1>O quanto de água você está vendo?</h1>
+                    <img src="img/information.svg" alt="" width="30px">
                     <div class="form">
-                        <img src="img/information.svg" alt="" width="30px">
+                        <button class="choices">OPT1</button>
+                        <button class="choices">OPT2</button>
+                        <button class="choices">OPT3</button>
                     </div>
-                    <input type="range" name="" class="slider" id="agua" min="1" max="3">
                 </div>
                 <button class="nextBtn">Proximo</button>
             </div>
