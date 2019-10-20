@@ -7,6 +7,10 @@ var flkty = new Flickity( elem, {
   draggable: true
 });
 
+document.getElementById("userData").addEventListener("click", function(){
+  let userName = document.getElementById("userName").value;
+  console.log(userName);
+})
 
 let size = "";
 
