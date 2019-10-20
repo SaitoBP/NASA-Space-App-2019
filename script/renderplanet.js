@@ -77,7 +77,7 @@ function tamanhoGrande() {
     flkty.insert(cell, 5);
 
     function saveToStorageN() {
-        flkty.selectCell(5, true, true);
+        flkty.selectCell(3, true, true);
     }
     function saveToStorageY() {
         gasoso = 'Sim';

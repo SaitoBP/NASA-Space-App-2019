@@ -26,7 +26,7 @@
             <div class="carousel-cell">
                 <div class="content">
                     <h1>Olá, pronto para começar uma jornada?</h1>
-                    <img src="img/information.svg" alt="" width="30px">
+                    <img src="img/information.svg" class="info" width="30px" onclick=" alert('Comunicação bem sucedida') ">
                     <p>
                         Bem-vindo(a) ao Programa Espacial My Little Planet,
                         você está prestas a embarcar em uma jornada pelo vasto
@@ -71,7 +71,7 @@
             <div class="carousel-cell">
                 <div class="content">
                     <h1>Nossos radares estão mostrando 3 planetas, para qual nós iremos?</h1>
-                    <img src="img/information.svg" alt="" width="30px">
+                    <img src="img/information.svg" class="info" width="30px" onclick=" alert('Lembre-se quanto maior o planeta, maiores as chances de ser gasoso!') ">
                     <div class="sizes">
                         <button onclick= "tamanhoPequeno()" class="choices" id="small">Pequeno</button>
                         <button onclick= "tamanhoMedio()" class="choices" id="medium">Médio</button>
@@ -83,7 +83,7 @@
             <div class="carousel-cell">
                 <div class="content">
                     <h1>Este planeta possui alguma estrela mãe?</h1>
-                    <img src="img/information.svg" alt="" width="30px">
+                    <img src="img/information.svg" class="info" width="30px" onclick=" alert('Estrelas que assim como o Sol possuem planetas em sua orbita') ">
                     <div class="form">
                         <button onclick="estrelaMaeSim()" id="sim1" class="formYes">Sim</button>
                         <button onclick="estrelaMaeNao()" id="nao1" class="formNo">Não</button>
@@ -94,7 +94,7 @@
             <div class="carousel-cell">
                 <div class="content">
                     <h1>O quanto de água você está vendo?</h1>
-                    <img src="img/information.svg" alt="" width="30px">
+                    <img src="img/information.svg" class="info" width="30px" onclick=" alert('A quantidade de água, influencia nas condições de vida do seu planeta') ">
                     <div class="form">
                         <button class="choices" onclick="renderPlaneta(agua = 1)">Sem água</button>
                         <button class="choices" onclick="renderPlaneta(agua = 2)">Pouca água</button>
@@ -107,6 +107,7 @@
                 <div class="content">
                     <h1>Parabens, nós encontramos esse planeta</h1>
                     <div id="planetaImagem"></div>
+                    <h1></h1>
                 </div>
             </div>
 
