@@ -82,11 +82,8 @@ function tamanhoGrande() {
     }
     function saveToStorageY() {
         gasoso = 'Sim';
-        // flkty.remove("carousel-cell");
-        flkty.selectCell(9, true, true);
+        flkty.selectCell(8, true, true);
         renderPlaneta();
-        flkty.next();
-
     }
 
     flkty.next();
@@ -118,10 +115,6 @@ function agua() {
     console.log(agua);
 }
 function renderPlaneta() {
-<<<<<<< HEAD
-=======
-
->>>>>>> a48df30976f77dd0e8f394c6ef401673883c3e0b
     if (gasoso == 'Sim') {
         //img planeta gás
         var planetaImagem = document.getElementById("planetaImagem");
