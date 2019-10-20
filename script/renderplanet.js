@@ -31,7 +31,6 @@ var agua;
 function tamanhoPequeno() {
     tamanho = smallChoice.innerText;
     flkty.next();
-    flkty.next();
 }
 function tamanhoMedio() {
     tamanho = mediumChoice.innerText;
@@ -78,11 +77,11 @@ function tamanhoGrande() {
     flkty.insert(cell, 5);
 
     function saveToStorageN() {
-        flkty.next();
+        flkty.selectCell(5, true, true);
     }
     function saveToStorageY() {
         gasoso = 'Sim';
-        flkty.selectCell(8, true, true);
+        flkty.selectCell(7, true, true);
         renderPlaneta();
     }
 
@@ -101,8 +100,7 @@ function estrelaMaeSim() {
 function estrelaMaeNao() {
 
     estrela = estrelaElement2.innerText;
-    flkty.next();
-    flkty.next();
+    flkty.selectCell(5, true, true);
 
 }
 
@@ -127,11 +125,33 @@ function renderPlaneta() {
     }
     else if (agua == 1) {
         //img planeta rocha
+        flkty.next();
+        var planetaImagem = document.getElementById("planetaImagem");
+        var x = document.createElement("IMG");
+        x.setAttribute("src", "../img/Saturno.svg");
+        x.setAttribute("width", "304");
+        x.setAttribute("alt", "saturno");
+        planetaImagem.appendChild(x);
+        
     }
     else if (agua == 2) {
         //img planeta agua+rocha
+        flkty.next();
+        var planetaImagem = document.getElementById("planetaImagem");
+        var x = document.createElement("IMG");
+        x.setAttribute("src", "../img/terra.svg");
+        x.setAttribute("width", "304");
+        x.setAttribute("alt", "terra");
+        planetaImagem.appendChild(x);
     }
     else if (agua == 3) {
         //img planeta agua
+        flkty.next();
+        var planetaImagem = document.getElementById("planetaImagem");
+        var x = document.createElement("IMG");
+        x.setAttribute("src", "../img/uranus.svg");
+        x.setAttribute("width", "304");
+        x.setAttribute("alt", "uranus");
+        planetaImagem.appendChild(x);
     }
 }

@@ -93,24 +93,12 @@
 
             <div class="carousel-cell">
                 <div class="content">
-                    <h1>Qual é a distancia deste planeta em relação a estrela mãe?</h1>
-                    <img src="img/information.svg" alt="" width="30px">
-                    <div class="form">
-                        <button class="choices">OPT 1</button>
-                        <button class="choices">OPT 2</button>
-                        <button class="choices">OPT 3</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="carousel-cell">
-                <div class="content">
                     <h1>O quanto de água você está vendo?</h1>
                     <img src="img/information.svg" alt="" width="30px">
                     <div class="form">
-                        <button class="choices">OPT1</button>
-                        <button class="choices">OPT2</button>
-                        <button class="choices">OPT3</button>
+                        <button class="choices" onclick="renderPlaneta(agua = 1)">Sem água</button>
+                        <button class="choices" onclick="renderPlaneta(agua = 2)">Pouca água</button>
+                        <button class="choices" onclick="renderPlaneta(agua = 3)">Muita água</button>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 358.3 276.6" style="enable-background:new 0 0 358.3 276.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:7.9168;stroke-miterlimit:10;}
+	.st1{fill:#E5DF61;}
+	.st2{fill:none;stroke:#000000;stroke-width:6;stroke-miterlimit:10;}
+	.st3{fill:#F15A24;stroke:#000000;stroke-width:6;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#000000;stroke-width:9;stroke-miterlimit:10;}
+	.st5{fill:#F7931E;}
+	.st6{fill:#F15A24;}
+	.st7{fill:none;stroke:#000000;stroke-width:6.1229;stroke-miterlimit:10;}
+</style>
+<g id="Saturno">
+</g>
+<g id="Terra">
+</g>
+<g id="Jupiter">
+</g>
+<g id="Anel_de_Uranus">
+	<path class="st0" d="M1546.4-38.8"/>
+	<g id="XMLID_10_">
+		<g>
+			<ellipse class="st1" cx="176.2" cy="135.8" rx="112.5" ry="123.5"/>
+		</g>
+		<g>
+			<ellipse class="st2" cx="176.2" cy="135.8" rx="112.5" ry="123.5"/>
+		</g>
+	</g>
+	<path class="st3" d="M135.7,251.1c0,0,41.2-65.1,122.4-30.7C258.2,220.3,201.1,280.5,135.7,251.1z"/>
+	
+		<ellipse transform="matrix(0.9798 -0.1998 0.1998 0.9798 -23.818 38.5612)" class="st4" cx="179.2" cy="137.3" rx="178" ry="46.5"/>
+	<g id="XMLID_9_">
+		<g>
+			<path class="st5" d="M255.7,48.3c0,0,35,43,33,78v6C127.7,91.3,67.6,174,67.6,174l-4.4-26.2l0.4-26.8
+				C63.6,121,123.7,28.3,255.7,48.3z"/>
+		</g>
+		<g>
+			<path class="st2" d="M288.7,132.3C127.7,91.3,67.6,174,67.6,174l-4.4-26.2l0.4-26.8c0,0,60.1-92.7,192.1-72.7c0,0,35,43,33,78
+				V132.3z"/>
+		</g>
+	</g>
+	<g id="XMLID_2_">
+		<g>
+			<path class="st6" d="M128.4,23.7c54-25,95,0,95,0C171.4,44.7,123.7,25.8,128.4,23.7z"/>
+		</g>
+		<g>
+			<path class="st7" d="M128.4,23.7c-4.6,2.1,43,21,95,0C223.4,23.7,182.4-1.3,128.4,23.7z"/>
+		</g>
+	</g>
+</g>
+</svg>
