@@ -37,60 +37,60 @@ function tamanhoMedio() {
 }
 function tamanhoGrande() {
 
-        tamanho = largeChoice.innerText;
-        let content = document.createElement("div");
-        content.className = "content";
+    tamanho = largeChoice.innerText;
+    let content = document.createElement("div");
+    content.className = "content";
 
-        let title = document.createElement("h1");
-        title.innerHTML = "O planeta é gasoso?";
+    let title = document.createElement("h1");
+    title.innerHTML = "O planeta é gasoso?";
 
-        content.appendChild(title);
+    content.appendChild(title);
 
-        let gasForm = document.createElement("div");
-        gasForm.className = "form";
+    let gasForm = document.createElement("div");
+    gasForm.className = "form";
 
-        var label_Y = document.createElement("h3");
-        label_Y.setAttribute("class", "formYes");
-        label_Y.setAttribute("id", "gasFormYes");
-        label_Y.innerHTML = "Sim";
+    var label_Y = document.createElement("h3");
+    label_Y.setAttribute("class", "formYes");
+    label_Y.setAttribute("id", "gasFormYes");
+    label_Y.innerHTML = "Sim";
 
-        label_Y.addEventListener('click', saveToStorageY);
+    label_Y.addEventListener('click', saveToStorageY);
 
-        var label_N = document.createElement("h3");
-        label_N.setAttribute("class", "formNo");
-        label_N.setAttribute("id", "gasFormNo");
-        label_N.innerHTML = "Não"
+    var label_N = document.createElement("h3");
+    label_N.setAttribute("class", "formNo");
+    label_N.setAttribute("id", "gasFormNo");
+    label_N.innerHTML = "Não"
 
-        gasForm.appendChild(label_Y);
-        gasForm.appendChild(label_N);
+    gasForm.appendChild(label_Y);
+    gasForm.appendChild(label_N);
 
-        content.appendChild(gasForm)
+    content.appendChild(gasForm)
 
-        label_N.addEventListener('click', saveToStorageN);
+    label_N.addEventListener('click', saveToStorageN);
 
-        let cell = document.createElement("div");
-        cell.className = "carousel-cell";
+    let cell = document.createElement("div");
+    cell.className = "carousel-cell";
 
-        cell.appendChild(content);
+    cell.appendChild(content);
 
-        flkty.insert(cell, 5);
+    flkty.insert(cell, 5);
 
-        function saveToStorageN() {
-            flkty.next();
-        }
-        function saveToStorageY() {
-            gasoso = 'Sim'; 
-            // flkty.remove("carousel-cell");
-            flkty.selectCell(9, true, true);
-            renderPlaneta();
-            flkty.next();
-
-        }
-
+    function saveToStorageN() {
         flkty.next();
+    }
+    function saveToStorageY() {
+        gasoso = 'Sim';
+        // flkty.remove("carousel-cell");
+        flkty.selectCell(9, true, true);
+        renderPlaneta();
         flkty.next();
 
     }
+
+    flkty.next();
+    flkty.next();
+
+}
 
 function estrelaMaeSim() {
 
@@ -100,7 +100,7 @@ function estrelaMaeSim() {
 }
 
 function estrelaMaeNao() {
-    
+
     estrela = estrelaElement2.innerText;
     flkty.next();
     flkty.next();
@@ -116,9 +116,13 @@ function agua() {
     console.log(agua);
 }
 function renderPlaneta() {
-    gasoso = JSON.parse(localStorage.getItem('save_resp'));
+    
     if (gasoso == 'Sim') {
         //img planeta gás
+        var planet = document.createElement("img");
+        planet.setAttribute('src', '../img/jupiter.svg');
+        var planetaImagem = document.getElementById('planetaImagem');
+        console.log(planetaImagem);
 
     }
     else if (agua == 1) {
