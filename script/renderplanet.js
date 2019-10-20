@@ -1,6 +1,6 @@
-var nameElement = document.getElementById('name');
-var ageElement = document.getElementById('age');
-var nextElement = document.getElementById('prox1')
+// var nameElement = document.getElementById('name');
+// var ageElement = document.getElementById('age');
+// var nextElement = document.getElementById('prox1')
 
 var smallChoice = document.getElementById('small');
 var mediumChoice = document.getElementById('medium');
@@ -14,7 +14,7 @@ var aguaElement = document.getElementById('agua');
 
 var planeta;
 
-nextElement.addEventListener('click', saveData);
+//nextElement.addEventListener('click', saveData);
 
 var tamanho;
 var gasoso;
@@ -25,7 +25,9 @@ var agua;
 function saveData(){
     nome = nameElement.value;
     idade = ageElement.value;
-}
+
+    console.log(nome, idade);    
+}   
 function tamanhoPequeno(){
     tamanho = smallChoice.innerText;
     console.log(tamanho);

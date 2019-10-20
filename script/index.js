@@ -1,3 +1,4 @@
+// Carrosel (Não Mexer)
 var elem = document.querySelector('.main-carousel');
 var flkty = new Flickity( elem, {
   // options
@@ -7,11 +8,19 @@ var flkty = new Flickity( elem, {
   draggable: true
 });
 
-document.getElementById("userData").addEventListener("click", function(){
-  let userName = document.getElementById("userName").value;
-  console.log(userName);
+// -------------------------------------------------- //
+
+document.getElementById("userData").addEventListener("click", () => {
+  let userName = document.getElementById("userName");
+  let userAge = document.getElementById("userAge");
+
+  let name = (userName.value) ;
+  let age = userAge.value;
+
+  // console.log(name, age);
 })
 
+// -------------------------------------------------- //
 let size = "";
 
 document.getElementById("small").addEventListener("click",function(){
