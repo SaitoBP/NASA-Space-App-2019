@@ -1,6 +1,14 @@
-// var nameElement = document.getElementById('name');
-// var ageElement = document.getElementById('age');
-// var nextElement = document.getElementById('prox1')
+// -------------- Puxar nome do usuario -------------- //
+document.getElementById("userData").addEventListener("click", () => {
+    let userName = document.getElementById("userName").value
+    let userDataName = document.getElementById("userDataName");
+    userDataName.innerHTML = userName;
+})
+// --------------------------------------------------- //
+
+// ------------ Botões primeira pergunta ------------ //
+
+// ------------------------------------------------- //
 
 var smallChoice = document.getElementById('small');
 var mediumChoice = document.getElementById('medium');
@@ -14,18 +22,12 @@ var aguaElement = document.getElementById('agua');
 
 var planeta;
 
-//nextElement.addEventListener('click', saveData);
-
 var tamanho;
 var gasoso;
 var estrela;
 var distancia;
 var agua;
 
-function saveData() {
-    nome = nameElement.value;
-    idade = ageElement.value;
-}
 function tamanhoPequeno() {
     tamanho = smallChoice.innerText;
     flkty.next();
@@ -116,7 +118,6 @@ function agua() {
     console.log(agua);
 }
 function renderPlaneta() {
-    gasoso = JSON.parse(localStorage.getItem('save_resp'));
     if (gasoso == 'Sim') {
         //img planeta gás
 
