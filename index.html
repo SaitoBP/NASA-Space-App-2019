@@ -21,7 +21,7 @@
     </header>
 
     <section>
-        <div class="main-carousel">
+        <div id="main-carousel" class="main-carousel">
             <div class="carousel-cell">
                 <div class="content">
                     <h1>Olá, pronto para começar uma jornada?</h1>
@@ -64,8 +64,10 @@
                         Fuga natus omnis molestias!
                     </p>
                 </div>
-                <button onclick="flkty.next(); typeWriter()" class="nextBtn">Entendido</button>
+                <button onclick="flkty.next();" class="nextBtn">Entendido</button>
             </div>
+
+            <input type="radio" name="" id="">
 
             <div class="carousel-cell">
                 <div class="content">
@@ -75,9 +77,9 @@
                     </h1>
                     <img src="img/information.svg" alt="" width="30px">
                     <div class="sizes">
-                        <button class="choiceSize">Pequeno</button>
-                        <button class="choiceSize">Médio</button>
-                        <button class="choiceSize">Grande</button>
+                        <button class="choiceSize" id="small">Pequeno</button>
+                        <button class="choiceSize" id="medium">Médio</button>
+                        <button class="choiceSize" id="large">Grande</button>
                     </div>
                 </div>
             </div>
