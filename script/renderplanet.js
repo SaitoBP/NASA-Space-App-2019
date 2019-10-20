@@ -22,42 +22,104 @@ var estrela;
 var distancia;
 var agua;
 
-function saveData(){
+function saveData() {
     nome = nameElement.value;
     idade = ageElement.value;
 }
-function tamanhoPequeno(){
+function tamanhoPequeno() {
     tamanho = smallChoice.innerText;
-    console.log(tamanho);
+    flkty.next();
+    flkty.next();
 }
-function tamanhoMedio(){
+function tamanhoMedio() {
     tamanho = mediumChoice.innerText;
-    console.log(tamanho);
+    flkty.next();
 }
-function tamanhoGrande(){
-    tamanho = largeChoice.innerText;
-    console.log(tamanho);
-}
-function estrelaMae1(){
+function tamanhoGrande() {
+
+        tamanho = largeChoice.innerText;
+        let content = document.createElement("div");
+        content.className = "content";
+
+        let title = document.createElement("h1");
+        title.innerHTML = "O planeta é gasoso?";
+
+        content.appendChild(title);
+
+        let gasForm = document.createElement("div");
+        gasForm.className = "form";
+
+        var label_Y = document.createElement("h3");
+        label_Y.setAttribute("class", "formYes");
+        label_Y.setAttribute("id", "gasFormYes");
+        label_Y.innerHTML = "Sim";
+
+        label_Y.addEventListener('click', saveToStorageY);
+
+        var label_N = document.createElement("h3");
+        label_N.setAttribute("class", "formNo");
+        label_N.setAttribute("id", "gasFormNo");
+        label_N.innerHTML = "Não"
+
+        gasForm.appendChild(label_Y);
+        gasForm.appendChild(label_N);
+
+        content.appendChild(gasForm)
+
+        label_N.addEventListener('click', saveToStorageN);
+
+        let cell = document.createElement("div");
+        cell.className = "carousel-cell";
+
+        cell.appendChild(content);
+
+        flkty.insert(cell, 5);
+
+        function saveToStorageN() {
+            flkty.next();
+        }
+        function saveToStorageY() {
+            gasoso = 'Sim'; 
+            // flkty.remove("carousel-cell");
+            flkty.selectCell(9, true, true);
+            renderPlaneta();
+            flkty.next();
+
+        }
+
+        flkty.next();
+        flkty.next();
+
+    }
+
+function estrelaMaeSim() {
+
     estrela = estrelaElement1.innerText;
-    console.log(estrela);
+    flkty.next();
+
 }
-function estrelaMae2(){
+
+function estrelaMaeNao() {
+    
     estrela = estrelaElement2.innerText;
-    console.log(estrela);
+    flkty.next();
+    flkty.next();
+
 }
-function distancia(){
+
+function distancia() {
     distancia = distanciaElement.value;
     console.log(distancia);
 }
-function agua(){
+function agua() {
     agua = aguaElement.value;
     console.log(agua);
 }
-function renderPlaneta(){
+function renderPlaneta() {
     gasoso = JSON.parse(localStorage.getItem('save_resp'));
     if (gasoso == 'Sim') {
         //img planeta gás
+
     }
     else if (agua == 1) {
         //img planeta rocha
@@ -65,7 +127,7 @@ function renderPlaneta(){
     else if (agua == 2) {
         //img planeta agua+rocha
     }
-    else if (agua == 3){
+    else if (agua == 3) {
         //img planeta agua
     }
 }
