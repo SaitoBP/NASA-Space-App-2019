@@ -36,6 +36,7 @@ document.getElementById("large").addEventListener("click", function(){
   let gasForm = document.createElement("div");
   gasForm.className = "form";
 
+<<<<<<< HEAD
   var label_Y = document.createElement("h3");
   label_Y.setAttribute("class", "formYes");
   label_Y.setAttribute("id", "gasFormYes");
@@ -46,14 +47,27 @@ document.getElementById("large").addEventListener("click", function(){
   var label_N = document.createElement("h3");
   label_N.setAttribute("class", "formNo");
   label_N.setAttribute("id", "gasFormNo");
+=======
+  let label_Y = document.createElement("h3");
+  label_Y.setAttribute("class", "formYes");
+  label_Y.innerHTML = "Sim";
+  
+  let label_N = document.createElement("h3");
+  label_N.setAttribute("class", "formNo");
+>>>>>>> 7ba53c5955a38a141eff7869591fe6edd8bb87db
   label_N.innerHTML = "Não"
   
   gasForm.appendChild(label_Y);
   gasForm.appendChild(label_N);
+<<<<<<< HEAD
   
   content.appendChild(gasForm)
   
   label_N.addEventListener('click', saveToStorageN);
+=======
+  
+  content.appendChild(gasForm)
+>>>>>>> 7ba53c5955a38a141eff7869591fe6edd8bb87db
 
   let cell = document.createElement("div");
   cell.className = "carousel-cell";
@@ -61,6 +75,10 @@ document.getElementById("large").addEventListener("click", function(){
   cell.appendChild(content);
 
   flkty.insert(cell, 5);
+<<<<<<< HEAD
+=======
+  flkty.next();
+>>>>>>> 7ba53c5955a38a141eff7869591fe6edd8bb87db
   flkty.next();
   flkty.next();
 
