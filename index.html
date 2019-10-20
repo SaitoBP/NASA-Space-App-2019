@@ -43,12 +43,12 @@
                 <div class="content">
                     <h1>Antes de partimos preciso saber de algumas coisas</h1>
                     <h3>Como voce se chama?</h3>
-                    <input type="text" placeholder="Ex: Ana"><br>
+                    <input type="text" placeholder="Ex: Ana" id="name"><br>
 
                     <h3>Quantos anos você tem?</h3>
-                    <input type="text" placeholder="Ex: 8"><br>
+                    <input type="text" placeholder="Ex: 8" id="age"><br>
                 </div>
-                <button onclick="flkty.next()" class="nextBtn">Proximo</button>
+                <button onclick="flkty.next()" id="prox1" class="nextBtn">Proximo</button>
             </div>
 
             <div class="carousel-cell">
@@ -71,16 +71,44 @@
 
             <div class="carousel-cell">
                 <div class="content">
-                    <h1>
-                        Nossos radares estão mostrando 3 planetas, para qual
-                        nós iremos?
-                    </h1>
+                    <h1>Nossos radares estão mostrando 3 planetas, para qual nós iremos?</h1>
                     <img src="img/information.svg" alt="" width="30px">
                     <div class="sizes">
-                        <button class="choiceSize" id="small">Pequeno</button>
-                        <button class="choiceSize" id="medium">Médio</button>
-                        <button class="choiceSize" id="large">Grande</button>
+                        <button onclick= "tamanhoPequeno()" class="choiceSize" id="small">Pequeno</button>
+                        <button onclick= "tamanhoMedio()" class="choiceSize" id="medium">Médio</button>
+                        <button onclick= "tamanhoGrande()" class="choiceSize" id="large">Grande</button>
                     </div>
+                </div>
+            </div>
+
+            <div class="carousel-cell">
+                <div class="content">
+                    <h1>Este planeta possui alguma estrela mãe?</h1>
+                    <img src="img/information.svg" alt="" width="30px">
+                    <div class="form">
+                        <button onclick="estrelaMae1()" id="sim1" class="formYes">Sim</button>
+                        <button onclick="estrelaMae2()" id="nao1" class="formNo">Não</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-cell">
+                <div class="content">
+                    <h1>Qual é a distancia deste planeta?</h1>
+                    <img src="img/information.svg" alt="" width="30px">
+                    <div class="form">
+                        <input type="range" name="" id="distancia" min="1" max="3">
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-cell">
+                <div class="content">
+                    <h1>O quanto de água você está vendo?</h1>
+                    <div class="form">
+                        <img src="img/information.svg" alt="" width="30px">
+                    </div>
+                    <input type="range" name="" id="agua" min="1" max="3">
                 </div>
             </div>
 
@@ -96,5 +124,6 @@
 
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="script/index.js"></script>
+    <script src="script/renderplanet.js"></script>
 </body>
 </html>

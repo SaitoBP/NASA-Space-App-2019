@@ -104,6 +104,44 @@ input:focus {
 
 .choiceSize:hover {
     cursor: pointer;
-
     background-color: rgba(219, 198, 217, 0.3);
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+}
+
+.formYes {
+    border: 2px solid #49A747;
+    border-radius: 10px;
+    width: 80px;
+    color: #49A747;
+    margin: 2%;
+}
+
+.formYes:hover {
+    cursor: pointer;
+    background-color: rgba(73, 167, 71, 0.3);
+}
+
+.formNo {
+    border: 2px solid #CF2B37;
+    border-radius: 10px;
+    width: 80px;
+    color: #CF2B37;
+    margin: 2%;
+}
+
+.formNo:hover {
+    cursor: pointer;
+    background-color: rgba(207, 43, 55, 0.3);
+}
+
+input[type="range"] {
+    width: 60%;
+    margin-top: 10%;
 }
