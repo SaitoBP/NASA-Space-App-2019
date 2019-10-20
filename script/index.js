@@ -20,6 +20,7 @@ document.getElementById("medium").addEventListener("click",  function(){
   // alert("Planeta médio");
   size = "medium"
   flkty.next();
+  flkty.next();
 })
 
 document.getElementById("large").addEventListener("click", function(){
@@ -31,28 +32,30 @@ document.getElementById("large").addEventListener("click", function(){
   let title = document.createElement("h1");
   title.innerHTML = "O planeta é gasoso?";
 
-  let form_Y = document.createElement("input");
-  form_Y.setAttribute("type", "radio");
-  let label_Y = document.createElement("h3");
-  label_Y.innerHTML = "Sim";
+  content.appendChild(title);
 
-  let form_N = document.createElement("input");
-  form_N.setAttribute("type", "radio");
+  let gasForm = document.createElement("div");
+  gasForm.className = "form";
+
+  let label_Y = document.createElement("h3");
+  label_Y.setAttribute("class", "formYes");
+  label_Y.innerHTML = "Sim";
+  
   let label_N = document.createElement("h3");
+  label_N.setAttribute("class", "formNo");
   label_N.innerHTML = "Não"
   
-  content.appendChild(title);
-  content.appendChild(form_Y);
-  content.appendChild(label_Y);
-  content.appendChild(form_N);
-  content.appendChild(label_N);
+  gasForm.appendChild(label_Y);
+  gasForm.appendChild(label_N);
   
+  content.appendChild(gasForm)
+
   let cell = document.createElement("div");
   cell.className = "carousel-cell";
 
   cell.appendChild(content);
 
-  flkty.insert(cell, 4);
-
+  flkty.insert(cell, 5);
+  flkty.next();
   flkty.next();
 })
