@@ -116,13 +116,15 @@ function agua() {
     console.log(agua);
 }
 function renderPlaneta() {
-    
+
     if (gasoso == 'Sim') {
         //img planeta gás
-        var planet = document.createElement("img");
-        planet.setAttribute('src', '../img/jupiter.svg');
-        var planetaImagem = document.getElementById('planetaImagem');
-        console.log(planetaImagem);
+        var planetaImagem = document.getElementById("planetaImagem");
+        var x = document.createElement("IMG");
+        x.setAttribute("src", "../img/jupiter.svg");
+        x.setAttribute("width", "304");
+        x.setAttribute("alt", "Jupiter");
+        planetaImagem.appendChild(x);
 
     }
     else if (agua == 1) {
